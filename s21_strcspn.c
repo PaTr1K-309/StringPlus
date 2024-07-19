@@ -10,8 +10,7 @@ s21_size_t s21_strcspn(const char *str1, const char *str2) {
         found_flag = 1;
       }
     }
-    if (!found_flag)
-      result++;
+    if (!found_flag) result++;
   }
   return result;
 }

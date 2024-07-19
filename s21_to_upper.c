@@ -8,8 +8,7 @@ void *s21_to_upper(const char *str) {
   if (up_str) {
     s21_strncpy(up_str, str, s21_strlen(str) + 1);
     for (char *up = up_str; *up; up++) {
-      if (*up >= 'a' && *up <= 'z')
-        *up -= 32;
+      if (*up >= 'a' && *up <= 'z') *up -= 32;
     }
   }
   return (void *)up_str;

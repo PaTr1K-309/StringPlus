@@ -1,10 +1,13 @@
 #ifndef SRC_S21_STRING_H_
 #define SRC_S21_STRING_H_
 
+#include <ctype.h>
+#include <limits.h>
+#include <math.h>
 #include <stdarg.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
 
 #define S21_NULL ((void *)0)
 typedef long unsigned int s21_size_t;

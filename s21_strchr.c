@@ -11,7 +11,6 @@ char *s21_strchr(const char *str, int c) {
     }
   }
 
-  if (c == '\0')
-    res = (char *)str;
+  if (c == '\0') res = (char *)str;
   return res;
 }

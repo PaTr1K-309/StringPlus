@@ -6,6 +6,7 @@
 
 #include "../s21_string.h"
 
+Suite *sprintf_suite();
 Suite *strlen_suite();
 Suite *strcmp_suite();
 Suite *strncmp_suite();
@@ -29,8 +30,6 @@ Suite *to_upper_suite();
 Suite *to_lower_suite();
 Suite *insert_suite();
 Suite *trim_suite();
-Suite *sprintf_suite();
-Suite *s21_sprintf_suite();
 Suite *sscanf_suite();
 
 #endif  // SRC_TEST_S21_TESTS_H_

@@ -12,8 +12,7 @@ void *s21_to_lower(const char *str) {
   if (low_str) {
     s21_strncpy(low_str, str, s21_strlen(str) + 1);
     for (char *low = low_str; *low; low++) {
-      if ((*low >= 'A' && *low <= 'Z'))
-        *low += 32;
+      if ((*low >= 'A' && *low <= 'Z')) *low += 32;
     }
   }
   return (void *)low_str;

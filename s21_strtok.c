@@ -5,18 +5,15 @@ char *s21_strtok(char *str, const char *divider) {
   if (divider != S21_NULL) {
     static char *next = S21_NULL;
 
-    if (str)
-      next = str;
+    if (str) next = str;
 
     if (next) {
-      while (*next && s21_strchr(divider, *next))
-        next++;
+      while (*next && s21_strchr(divider, *next)) next++;
 
       if (*next != '\0') {
         res = next;
 
-        while (*next && !s21_strchr(divider, *next))
-          next++;
+        while (*next && !s21_strchr(divider, *next)) next++;
 
         if (*next)
           *next++ = '\0';
